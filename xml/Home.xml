@@ -66,14 +66,14 @@
 					</control>
 				</control>
 				<!-- estury movies widgets-->
-				<control type="grouplist" id="19000">
+				<control type="grouplist" id="19001">
 						<include>WidgetGroupListCommon</include>
-						<pagecontrol>19010</pagecontrol>
+						<pagecontrol>19099</pagecontrol>
 						<include content="WidgetListCategories" condition="Library.HasContent(movies) + !Skin.HasSetting(home_no_categories_widget)">
 							<param name="content_path" value="library://video/movies/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="5900"/>
+							<param name="list_id" value="19900"/>
 						</include>
 						<include content="WidgetListPoster" condition="Library.HasContent(movies)">
 							<param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
@@ -103,7 +103,7 @@
 							<param name="content_path" value="videodb://movies/genres/"/>
 							<param name="widget_header" value="$LOCALIZE[135]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="5500"/>
+							<param name="list_id" value="19500"/>
 							<param name="icon" value="$VAR[WidgetGenreIconVar]"/>
 							<param name="icon_height" value="70"/>
 						</include>
@@ -112,7 +112,7 @@
 							<param name="widget_header" value="$LOCALIZE[31075]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="sortby" value="random"/>
-							<param name="list_id" value="5600"/>
+							<param name="list_id" value="19600"/>
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(movies)">
@@ -123,7 +123,7 @@
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMovieButton)"/>
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
-						<param name="scrollbar_id" value="19010"/>
+						<param name="scrollbar_id" value="19090"/>
 					</include>
 				</control>
 				<!-- MOVIES -
