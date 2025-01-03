@@ -31,7 +31,7 @@
 			<animation effect="fad" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<!-- WIDGETS GROUP -->
 			<control type="group" id="2000">
-				<left>4.62</left>
+				<left>462</left>
 				<top>550</top>
 				
 				<include>OpenClose_Right</include>
@@ -65,7 +65,7 @@
 						</include>
 					</control>
 				</control>
-				<!-- estury movies widgets-->
+				<!-- estury movies widgets
 			
 					<control type="group" id="19000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),movies)</visible>
@@ -131,8 +131,8 @@
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="19090"/>
 					</include>
-				</control>
-				<!-- MOVIES -
+				</control>-->
+				<!-- MOVIES -->
 				<control type="group" id="1900">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),movies)</visible>
 					<include content="Visible_Right_Delayed">
