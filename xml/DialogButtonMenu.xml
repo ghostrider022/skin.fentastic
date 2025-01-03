@@ -19,14 +19,14 @@
 				<include>ButtonMenuList</include>
 				<content>
 					<item>
-						<label>Reload skin</label>
+						<label>Addons</label>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick>ReloadSkin()</onclick>
+						<onclick>ActivateWindow(addonbrowser)</onclick>
 					</item>
 					<item>
-						<label>Skin settings</label>
+						<label>Settings</label>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick>ActivateWindow(SkinSettings.xml)</onclick>
+						<onclick>ActivateWindow(settings)</onclick>
 					</item>
 					<item>
 						<label>Toggle debugging</label>
