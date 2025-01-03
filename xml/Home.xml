@@ -31,7 +31,7 @@
 			<animation effect="fad" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<!-- WIDGETS GROUP -->
 			<control type="group" id="2000">
-				<left>462</left>
+				<left>4.62</left>
 				<top>550</top>
 				
 				<include>OpenClose_Right</include>
