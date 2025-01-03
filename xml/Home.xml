@@ -31,7 +31,7 @@
 			<animation effect="fad" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<!-- WIDGETS GROUP -->
 			<control type="group" id="2000">
-				<left>4.62</left>
+				<left>400</left>
 				<top>550</top>
 				
 				<include>OpenClose_Right</include>
@@ -1109,7 +1109,7 @@
 						<param name="width" value="410" />
 						<param name="top" value="239" />
 						<param name="ratings_spacing" value="7" />
-						<param name="height_noalt" value="4.60" />
+						<param name="height_noalt" value="460" />
 						<param name="height_alt_movie" value="330" />
 						<param name="height_alt_tvshow" value="290" />
 					</include>
