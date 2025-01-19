@@ -29,14 +29,15 @@
 					<width>1350</width>
 					<orientation>horizontal</orientation>
 					<itemgap>30</itemgap>
-					<control type="label">
+					<!--<control type="label">
 						<width max="1350">auto</width>
 						<label>$PARAM[label]</label>
 						<textcolor>unfocused_text</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 						<scroll>true</scroll>
 						<visible>!Control.HasFocus($PARAM[list_id])</visible>
-					</control>
+					</control>-->
+					
 					<!-- RATINGS VISIBLE -->
 					<control type="label">
 						<width max="695">auto</width>
