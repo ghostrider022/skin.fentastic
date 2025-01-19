@@ -93,9 +93,10 @@
 						<visible>[String.IsEqual(ListItem.DBtype,movie) + String.IsEmpty(ListItem.Genre)] + Control.HasFocus($PARAM[list_id])</visible>
 						<visible>[String.IsEmpty(Skin.String(mdblist_api_key)) | Skin.HasSetting(Disable.WidgetLabelRatings)]</visible>
 					</control>
-					<control type="lebel">
+					<control type="textbox">
 						<width max="1350">auto</width>
 						<label>$VAR[InfoPanel]</label>
+						<textcolor>unfocused_text</textcolor>
 					</control>
 						
 					<control type="grouplist">
@@ -216,19 +217,20 @@
 							<itemgap>8</itemgap>
 							<align>left</align>
 							<visible>![String.IsEmpty(Window.Property(fentastic.tmdbRating)) | Skin.HasSetting(Disable.TMDbRating)]</visible>
-							<control type="image">
+							<!--<control type="image">
 								<top>45</top>
 								<width>36</width>
 								<aspectratio>keep</aspectratio>
 								<align>left</align>
 								<aligny>center</aligny>
 								<texture>$INFO[Window.Property(fentastic.tmdbImage)]</texture>
-							</control>
+							</control>-->
 							<control type="label">
-								<width max="60">auto</width>
+								<width max="1060">auto</width>
 								<height>32</height>
 								<align>left</align>
-								<label>$INFO[Window.Property(fentastic.tmdbRating)]</label>
+								<label>$VAR[InfoPanel]</label>
+								<!--<label>$INFO[Window.Property(fentastic.tmdbRating)]</label>-->
 							</control>
 						</control>
 					</control>
