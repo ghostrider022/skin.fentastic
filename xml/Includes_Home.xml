@@ -16,18 +16,18 @@
 		<param name="label_focus">$INFO[Container($PARAM[list_id]).ListItem.Title,[B] > [/B]]</param>
 		<param name="label_focus_episodes">$INFO[Container($PARAM[list_id]).ListItem.TVShowTitle,[B] > [/B]]$INFO[Container($PARAM[list_id]).ListItem.Title,[B] | [/B]]</param>
 		<param name="label_focus_collections">$INFO[Container($PARAM[list_id]).ListItem.Label,[B]> [/B]]</param>
-		<param name="label_focus1">$VAR[InfoPanel][B]        [/B]</param>
+		<param name="label_focus1">$VAR[InfoPanel][B]        < [/B]</param>
 		<definition>
 			<control type="group" id="$PARAM[list_id]665">
 				<left>75</left>
 				<top>80</top>
-				<onback>9000</onback>
+				<!--<onback>9000</onback>-->
 				<height>90</height>
-				<width>1350</width>
+				<width>1600</width>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,$PARAM[item_treshold]) | [Container($PARAM[list_id]).IsUpdating + Integer.IsEqual(Container($PARAM[list_id]).NumItems,0)]</visible>
 				<visible>$PARAM[visible]</visible>
 				<control type="grouplist">
-					<width>1350</width>
+					<width>1600</width>
 					<orientation>horizontal</orientation>
 					<itemgap>30</itemgap>
 					<control type="label">
@@ -79,7 +79,7 @@
 						<visible>[String.IsEmpty(Skin.String(mdblist_api_key)) | Skin.HasSetting(Disable.WidgetLabelRatings)]</visible>
 					</control>
 					<control type="label">
-						<width max="1350">auto</width>
+						<width max="1600">auto</width>
 						<label>$PARAM[label]$PARAM[label_focus_episodes]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 						<scroll>true</scroll>
@@ -88,7 +88,7 @@
 						<visible>[String.IsEmpty(Skin.String(mdblist_api_key)) | Skin.HasSetting(Disable.WidgetLabelRatings)]</visible>
 					</control>
 					<control type="label">
-						<width max="1350">auto</width>
+						<width max="1600">auto</width>
 						<label>$PARAM[label_focus_collections]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 						<scroll>true</scroll>
