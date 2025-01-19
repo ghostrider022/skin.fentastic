@@ -97,6 +97,8 @@
 						<width max="1350">auto</width>
 						<label>$VAR[InfoPanel]</label>
 						<textcolor>unfocused_text</textcolor>
+							<visible>[String.IsEqual(ListItem.DBtype,movie) + String.IsEmpty(ListItem.Genre)] + Control.HasFocus($PARAM[list_id])</visible>
+						<visible>[String.IsEmpty(Skin.String(mdblist_api_key)) | Skin.HasSetting(Disable.WidgetLabelRatings)]</visible>
 					</control>
 						
 					<control type="grouplist">
