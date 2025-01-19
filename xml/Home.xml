@@ -30,9 +30,9 @@
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<!-- WIDGETS GROUP -->
 			<control type="group" id="2000">
-				<left>30</left>
-				<top>150</top>
-				<bottom>100</bottom>
+				<left>0</left>
+				<top>100</top>
+				<bottom>50</bottom>
 				
 				<include>OpenClose_Right</include>
 				<visible>!Skin.HasSetting(TrailerPlaying)</visible>
@@ -1075,8 +1075,8 @@
 					<control type="group">
 						<visible>Skin.HasSetting(Disable.RatingsINF) | String.IsEmpty(Skin.String(mdblist_api_key))</visible>
 						<control type="textbox">
-							<left>30</left>
-							<top>30</top>
+							<right>50</right>
+							<bottom>10</bottom>
 							<width>1500</width>
 							
 							<label>$VAR[InfoPanel]</label>
