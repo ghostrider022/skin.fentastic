@@ -96,12 +96,12 @@
 						<visible>[String.IsEqual(ListItem.DBtype,movie) + String.IsEmpty(ListItem.Genre)] + Control.HasFocus($PARAM[list_id])</visible>
 						<visible>[String.IsEmpty(Skin.String(mdblist_api_key)) | Skin.HasSetting(Disable.WidgetLabelRatings)]</visible>
 					</control>
-					<control type="textbox">
+					<!--<control type="textbox">
 						<width max="1350">auto</width>
 						<label>$VAR[InfoPanel]</label>
 						<textcolor>unfocused_text</textcolor>
 						<visible>Control.HasFocus($PARAM[list_id])</visible>
-					</control>
+					</control>-->
 						
 					<control type="grouplist">
 						<visible>![String.IsEmpty(Skin.String(mdblist_api_key)) | Skin.HasSetting(Disable.WidgetLabelRatings) | Container($PARAM[list_id]).IsUpdating] + [String.IsEqual(ListItem.DBtype,movie) | String.IsEqual(ListItem.DBtype,tvshow) | String.IsEqual(ListItem.DBtype,season) | String.IsEqual(ListItem.DBtype,episode)] + !String.IsEmpty(ListItem.Genre) + Control.HasFocus($PARAM[list_id])</visible>
