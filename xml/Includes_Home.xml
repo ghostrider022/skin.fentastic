@@ -93,6 +93,11 @@
 						<visible>[String.IsEqual(ListItem.DBtype,movie) + String.IsEmpty(ListItem.Genre)] + Control.HasFocus($PARAM[list_id])</visible>
 						<visible>[String.IsEmpty(Skin.String(mdblist_api_key)) | Skin.HasSetting(Disable.WidgetLabelRatings)]</visible>
 					</control>
+					<control type="lebel">
+						<width max="1350">auto</width>
+						<label>$VAR[InfoPanel]</label>
+					</control>
+						
 					<control type="grouplist">
 						<visible>![String.IsEmpty(Skin.String(mdblist_api_key)) | Skin.HasSetting(Disable.WidgetLabelRatings) | Container($PARAM[list_id]).IsUpdating] + [String.IsEqual(ListItem.DBtype,movie) | String.IsEqual(ListItem.DBtype,tvshow) | String.IsEqual(ListItem.DBtype,season) | String.IsEqual(ListItem.DBtype,episode)] + !String.IsEmpty(ListItem.Genre) + Control.HasFocus($PARAM[list_id])</visible>
 						<orientation>horizontal</orientation>
@@ -522,11 +527,11 @@
 	<include name="WidgetListBigPoster">
 		<param name="onclick_condition">false</param>
 		<definition>
-			<!--<include content="CategoryLabel">
+			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
-			<include content="BusyListSpinner">
+			<!--<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="posy" value="240"/>
 			</include>-->
@@ -543,7 +548,7 @@
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
-				<itemlayout width="269" height="393">
+				<itemlayout width="269" height="420">
 					<control type="group">
 						<left>68</left>
 						<top>15</top>
@@ -553,7 +558,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="269" height="393">
+				<focusedlayout width="269" height="420">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>68</left>
