@@ -64,7 +64,7 @@
 						</include>
 					</control>
 				</control>
-				<!-- MOVIES -->
+				<!-- MOVIES --
 				<control type="group" id="19000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),movies)</visible>
 					<include content="Visible_Right_Delayed">
@@ -117,7 +117,7 @@
 							<param name="widget_target" value="videos"/>
 							<param name="sortby" value="random"/>
 							<param name="list_id" value="5600"/>
-						</include>-->
+						</include>--
 					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(movies)">
 						<param name="text_label" value="$LOCALIZE[31104]" />
@@ -127,10 +127,10 @@
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMovieButton)"/>
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
-						<param name="scrollbar_id" value="19010"/>
+						<param name="scrollbar_id" value="19099"/>
 					</include>
-				</control>
-				<!--<control type="group" id="19000">
+				</control>-->
+				<control type="group" id="19000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),movies)</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="movies"/>
