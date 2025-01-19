@@ -31,8 +31,8 @@
 			<!-- WIDGETS GROUP -->
 			<control type="group" id="2000">
 				<!--<left>0</left>-->
-				<top>150</top>
-				
+				<top>1</top>
+				<bottom>50</bottom>
 				<include>OpenClose_Right</include>
 				<visible>!Skin.HasSetting(TrailerPlaying)</visible>
 				<animation effect="slide" time="700" start="1380,0" end="0,0" tween="sine" easing="inout">VisibleChange</animation>
@@ -1075,7 +1075,7 @@
 						<visible>Skin.HasSetting(Disable.RatingsINF) | String.IsEmpty(Skin.String(mdblist_api_key))</visible>
 						<control type="textbox">
 							<left>300</left>
-							<top>15</top>
+							<top>1000</top>
 							<width>1920</width>
 			
 							
