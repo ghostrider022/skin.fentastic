@@ -38,7 +38,8 @@
 						<visible>!Control.HasFocus($PARAM[list_id])</visible>
 					</control>-->
 					
-					<!-- RATINGS VISIBLE -->
+					<!-- RATINGS VISIBLE --
+					
 					<control type="label">
 						<width max="695">auto</width>
 						<label>$PARAM[label]$PARAM[label_focus]</label>
