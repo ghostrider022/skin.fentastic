@@ -1074,8 +1074,8 @@
 					<control type="group">
 						<visible>Skin.HasSetting(Disable.RatingsINF) | String.IsEmpty(Skin.String(mdblist_api_key))</visible>
 						<control type="textbox">
-							<left>50</left>
-							<top>10</top>
+							<left>400</left>
+							<top>1050</top>
 							<width>1500</width>
 							
 							<label>$VAR[InfoPanel]</label>
