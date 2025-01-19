@@ -1074,11 +1074,10 @@
 					<control type="group">
 						<visible>Skin.HasSetting(Disable.RatingsINF) | String.IsEmpty(Skin.String(mdblist_api_key))</visible>
 						<control type="textbox">
-							<left>300</left>
-							<top>1000</top>
+							<!--<left>300</left>-->
+							<top>1020</top>
 							<width>1920</width>
-			
-							
+							<align>right</align>
 							<label>$VAR[InfoPanel]</label>
 							<textcolor>unfocused_text</textcolor>
 							<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
