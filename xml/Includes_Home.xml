@@ -522,14 +522,14 @@
 	<include name="WidgetListBigPoster">
 		<param name="onclick_condition">false</param>
 		<definition>
-			<include content="CategoryLabel">
+			<!--<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="posy" value="240"/>
-			</include>
+			</include>-->
 			<control type="fixedlist" id="$PARAM[list_id]">
 				<left>0</left>
 				<top>115</top>
