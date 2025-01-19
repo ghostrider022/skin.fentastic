@@ -16,7 +16,7 @@
 		<param name="label_focus">$INFO[Container($PARAM[list_id]).ListItem.Title,[B] > [/B]]</param>
 		<param name="label_focus_episodes">$INFO[Container($PARAM[list_id]).ListItem.TVShowTitle,[B] > [/B]]$INFO[Container($PARAM[list_id]).ListItem.Title,[B] | [/B]]</param>
 		<param name="label_focus_collections">$INFO[Container($PARAM[list_id]).ListItem.Label,[B]> [/B]]</param>
-		<param name="label_focus1">$VAR[InfoPanel]</param>
+		<param name="label_focus1">$VAR[InfoPanel][B]        [/B]</param>
 		<definition>
 			<control type="group" id="$PARAM[list_id]665">
 				<left>75</left>
@@ -70,7 +70,7 @@
 					</control>
 					<!-- RATINGS NOT VISIBLE -->
 					<control type="label">
-						<width max="1350">auto</width>
+						<width max="1600">auto</width>
 						<label>$PARAM[label]$PARAM[label_focus]$PARAM[label_focus1]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 						<scroll>true</scroll>
