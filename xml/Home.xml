@@ -31,7 +31,7 @@
 			<!-- WIDGETS GROUP -->
 			<control type="group" id="2000">
 				<!--<left>0</left>-->
-				<top>80</top>
+				<top>100</top>
 				
 				<include>OpenClose_Right</include>
 				<visible>!Skin.HasSetting(TrailerPlaying)</visible>
@@ -1074,9 +1074,10 @@
 					<control type="group">
 						<visible>Skin.HasSetting(Disable.RatingsINF) | String.IsEmpty(Skin.String(mdblist_api_key))</visible>
 						<control type="textbox">
-							<left>400</left>
-							<top>1050</top>
-							<width>1500</width>
+							<left>0</left>
+							<top>20</top>
+							<width>1920</width>
+							<align>centre</align>
 							
 							<label>$VAR[InfoPanel]</label>
 							<textcolor>unfocused_text</textcolor>
