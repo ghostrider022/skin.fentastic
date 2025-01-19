@@ -1054,7 +1054,7 @@
 					<width>550</width>
 					<visible>String.IsEqual(ListItem.DBtype,movie) | String.IsEqual(ListItem.DBtype,tvshow) | String.IsEqual(ListItem.DBtype,season) | String.IsEqual(ListItem.DBtype,episode)</visible>
 					<include>OpenClose_Left</include>
-					<control type="image">
+					<!--<control type="image">
 						<left>30</left>
 						<top>50</top>
 						<width>395</width>
@@ -1071,14 +1071,14 @@
 						<font>font36_title</font>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>String.IsEmpty(ListItem.Art(clearlogo))</visible>
-					</control>
+					</control>-->
 					<control type="group">
 						<visible>Skin.HasSetting(Disable.RatingsINF) | String.IsEmpty(Skin.String(mdblist_api_key))</visible>
 						<control type="textbox">
 							<left>30</left>
-							<top>239</top>
-							<width>410</width>
-							<bottom>60</bottom>
+							<top>30</top>
+							<width>1500</width>
+							
 							<label>$VAR[InfoPanel]</label>
 							<textcolor>unfocused_text</textcolor>
 							<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
@@ -1106,8 +1106,8 @@
 					</control>
 					<include condition="![Skin.HasSetting(Disable.RatingsINF) | String.IsEmpty(Skin.String(mdblist_api_key))]" content="RatingsInfoPanel">
 						<param name="left" value="30" />
-						<param name="width" value="410" />
-						<param name="top" value="239" />
+						<param name="width" value="1500" />
+						<param name="top" value="30" />
 						<param name="ratings_spacing" value="7" />
 						<param name="height_noalt" value="460" />
 						<param name="height_alt_movie" value="330" />
