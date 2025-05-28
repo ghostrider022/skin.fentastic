@@ -73,7 +73,7 @@
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>19099</pagecontrol>
 						<include content="MovieWidgets" condition="!Skin.HasSetting(HomeMenuNoMoviesButton)" />
-						<animation effect="slide" end="0,120" time="200" condition="Integer.IsGreater(Container(19001).Position,2)">Conditional</animation>
+						<animation effect="slide" end="0,-200" time="3800" condition="Integer.IsGreater(Container(19001).CurrentItem,1)" reversible="true" tween="sine" easing="out" >Conditional</animation>
 					</control>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="19099"/>
